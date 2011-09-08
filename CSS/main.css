@@ -1,0 +1,84 @@
+/*Foglio di stile principale
+Comuni a index.html e winner.html */
+
+html, body{  
+        width: 100%;  
+        height: 100%;  
+        margin: 0;  
+        padding: 0;  
+        overflow: hidden; 
+
+} 
+
+/*per l'immagine a tutto schermo di sfondo*/
+#sfondo{  
+       position: absolute;  
+       height:100%;  
+       width: 100%;  
+       margin: 0;  
+       padding: 0;  
+} 
+
+
+/*Solo per index.html*/
+/*L'immagine con le due racchettine*/
+#paddle{
+	position: absolute;
+	top:10px;
+	left:10px;
+	height:20%;
+	width:10%;
+}
+        
+/*I pulsanti principali nel main*/
+#OptionsMain{
+	position: absolute;
+	left: 10px;
+	top: 60%;
+}
+
+/*Per la notifica della presenza o meno di javascript*/
+#jsabilitato { display: none; }
+
+/*Option.html
+opzioni di difficolta
+*/
+#optionDiff{
+	position: absolute;
+	left: 80%;
+}
+
+/*Opzioni colore*/
+#optionColor{
+	position: absolute;
+	left: 40%;
+}
+
+/*racchetta blu*/
+#racchettab
+{
+position: absolute;
+height: 15px;
+width: 100px;
+line-height:1px;
+background:blue;
+border:1px solid black;
+}
+
+/*racchetta verde*/
+#racchettag
+{
+position: absolute;
+height: 15px;
+width: 100px;
+line-height:1px;
+background:green;
+border:1px solid black;
+}
+
+/*tasto di ritorno all'indice*/
+#returMenu{
+	position: absolute;
+	left: 10px;
+	bottom: 10%;
+}

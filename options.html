@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<link rel="StyleSheet" href="CSS/main.css" type="text/css" media="screen">
+<link rel="StyleSheet" href="CSS/options.css" type="text/css" media="screen">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Opzioni</title>
+<script type="text/javascript">
+
+var lvldiff=0;
+var color=0;
+
+</script>
+</head>
+
+<body>
+<h1>Opzioni</h1>
+
+<!-- Pulsanti per le opzioni di colore -->
+<div id="optionColor">
+<h2>Colore Giocatore:</h2><br>
+<div id="racchettab"  onclick="javascript:color=0; alert('Selezionata racchetta blu')"></div><br><br><br>
+<div id="racchettag"  onclick="javascript: color=3; alert('Selezionata racchetta verde');"></div>
+</div>
+
+<!-- Pulsanti per le opzioni di difficoltà -->
+<div id="optionDiff">
+	<h2>Difficolta:</h2><br>
+	<button   onclick="javascript:lvldiff=0">Facile</button><br><br>
+	<button   onclick="javascript:lvldiff=1">Normale</button><br><br>
+	<button   onclick="javascript:lvldiff=2">Difficile</button>
+</div>
+
+<!-- Pulsante per tornare all'indice -->
+<p><button  ID="returMenu"  onclick="javascript: lvldiff+=color;location.href='index.html' + '?id=' + lvldiff;" >Torna al menu principale</button></p>
+
+
+</body>
+</html>

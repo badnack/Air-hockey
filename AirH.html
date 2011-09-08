@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!-- file contenente gli stili -->
+<link rel="StyleSheet" href="CSS/air.css" type="text/css" media="screen">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Air Hockey</title>
+<!-- file contenente il codice javascript -->
+<script type="text/javascript" src="SCRIPT/air.js"></script>
+</head>
+<!--caricando il body preparo il disegno della pagina-->
+<body    onload="javascript:init()" >
+
+	<!--blocco del campo da gioco -->
+	<div id="campog">
+	<!--racchette -->
+	<div id="rsinistra"></div>
+	<div id="rdestra"></div>
+	<!-- Dischetto -->	
+	<img id="ball" alt="ball" src="Immagini/ball.PNG"></div>
+	
+	<!--Punteggi dei giocatori -->
+	<p><input id = "P1Pun"  alt="P1Pun" type = "text" size = "5" readonly = "readonly"></p>
+	<p><input id = "P2Pun"  alt="P2Pun" type = "text" size = "5" readonly = "readonly"></p>
+
+	<!-- pulsanti -->
+	<div id="pulsanti">
+	<button  onclick="javascrit:start()">Premi per iniziare</button>
+	<button  style="margin-left: 50px;" onclick="javascrit:aumenta();">Aumenta velocita</button>
+	<button  style="margin-left: 50px;"onclick="javascrit:pause=1">Pausa</button>
+	<button  style="margin-left: 200px;"onclick="location.href='index.html'">Esci</button> </div>
+ 	
+	</body>
+</html>

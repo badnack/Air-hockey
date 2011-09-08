@@ -1,0 +1,77 @@
+/*comune a index e winner */
+
+html, body{  
+        width: 100%;  
+        height: 100%;  
+        margin: 0;  
+        padding: 0;  
+        overflow: hidden; 
+
+} 
+
+#sfondo{  
+       position: absolute;  
+       height:100%;  
+       width: 100%;  
+       margin: 0;  
+       padding: 0;  
+} 
+
+/*-- di index --*/
+
+#paddle{
+	position: absolute;
+	top:10px;
+	left:10px;
+	height:20%;
+	width:10%;
+}
+        
+
+#OptionsMain{
+	position: absolute;
+	left: 10px;
+	top: 60%;
+}
+
+#jsabilitato { display: none; }
+
+/*-- option --*/
+
+#optionDiff{
+	position: absolute;
+	left: 80%;
+}
+
+#optionColor{
+	position: absolute;
+	left: 40%;
+}
+
+#racchettab
+{
+position: absolute;
+height: 15px;
+width: 100px;
+line-height:1px;
+background:blue;
+border:1px solid black;
+}
+
+#racchettag
+{
+position: absolute;
+height: 15px;
+width: 100px;
+line-height:1px;
+background:green;
+border:1px solid black;
+}
+
+#returMenu{
+	position: absolute;
+	left: 10px;
+	bottom: 10%;
+}
+
+

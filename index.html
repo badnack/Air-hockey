@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<link rel="StyleSheet" href="CSS/main.css" type="text/css" media="screen">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Air Hockey Menu</title>
+<script type="text/javascript">
+	var opt=0;
+	function init(){
+		if (contrJava('jsabilitato')) contrJava('jsabilitato').style.display = 'block';
+		//prendo le opzioni se ci sono
+		opt=location.search;
+	}
+
+function contrJava(id) { 
+	return (document.getElementById)? document.getElementById(id) : document.all[id]; 
+	}
+
+window.onload = init; 
+window.onresize=init;
+</script>
+</head>
+	<body>
+		<div id="jsabilitato">
+			<!--Immagine di sfondo -->
+			<img src="Immagini/wallF.jpg" id="sfondo" alt="wallf">  
+			<img src="Immagini/airpaddle.png" id="paddle"  alt="airpaddle">  
+	
+	   		<!-- pulsanti -->
+			<div id="OptionsMain">
+			<button   onclick="location.href='AirH.html' + opt" >Inizia Torneo</button><br><br>
+			<button   onclick="location.href='AirH.html?id=7'">Allenamento</button><br><br>
+			<button   onclick="location.href='options.html'">Opzioni</button></div>
+
+		</div>
+
+   <!--in caso non sia presente javascript -->
+   <noscript>
+		<h2 style="text-align:center; color: red;">Javascript non attivato sul browser, attivarlo e riprovare!</h2>
+		<h3 style="text-align:center; color: red;">(se si sta usando Internet Explorer controllare di aver acconsentito sulla barra sopra)</h3>
+   </noscript>
+
+	</body>
+</html>
+
+
+

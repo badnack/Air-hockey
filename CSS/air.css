@@ -1,0 +1,80 @@
+/* Foglio di stile per Air hockey il gioco
+Ridefinisco il body */
+html, body{  
+        width: 100%;  
+        height: 100%;  
+        margin: 0;  
+        padding: 0;  
+        overflow: hidden; 
+	background-image: url('../Immagini/floor.jpg');
+
+} 
+
+/*il dischetto*/
+#ball
+{position: absolute;}
+
+/*campo da gioco*/
+#campog
+{
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	left: 100px;
+	top: 10px;
+	height: 80%;
+	width: 85%;
+	z-index: 2;
+	background-image: url("../Immagini/buco.jpg");
+
+} 
+
+/*la racchetta sinistra*/
+#rsinistra
+{
+	position: absolute;
+	left: 102px;
+	width: 15px;
+	height: 30%;
+	line-height:1px;
+	background:blue;
+	border:1px solid black;
+	left: 0px;
+}
+
+/*e quella destra*/
+#rdestra
+{
+	position: absolute;
+	top: 100px;
+	width: 15px;
+	height: 30%;
+	line-height:1px;
+	background:red;
+	border:1px solid black;
+	right: 0px;
+}
+
+/*il tabellone del punteggio della cpu*/
+#P2Pun{
+	position: absolute;
+	left: 5px;
+	top: 50px;
+
+}
+
+/*e quello del giocatore*/
+#P1Pun{
+	position: absolute;
+	left: 5px;
+	top: 10px;
+
+}
+
+/*i tasti: start pausa  velocita ed uscita*/
+#pulsanti{
+	position: absolute;
+	float: left;
+	z-index: 1;
+	left: 100px;
+	bottom: 4%;
+}
